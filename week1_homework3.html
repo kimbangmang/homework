@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>인물퀴즈!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        .container {
+            padding: 5px;
+        }
+
+        .plus {
+            margin: 10px 0px;
+        }
+
+        .card {
+            width: 500px;
+            margin: 0px 10px 10px 0px;
+            float: left;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+    </style>
+    <script>
+        function 정답() {
+            alert('정답입니다!');
+        }
+
+        function 오답() {
+            alert('틀렸습니다!');
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">이 사람은 누구일까요?</h1>
+            <p class="lead">힌트는 League of Legends, 프로게이머 입니다.</p>
+        </div>
+        <div calss="button">
+            <button onclick="오답()" type="button" class="btn btn-secondary">Makerㅣ이상혁</button>
+            <button onclick="정답()" type="button" class="btn btn-secondary">Fakerㅣ이상혁</button>
+            <button onclick="오답()" type="button" class="btn btn-secondary">Pakerㅣ이상혁</button>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                     src="https://static.invenglobal.com/upload/image/2020/02/13/i1581594185784333.jpeg"
+                     alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://static.invenglobal.com/upload/image/2019/07/30/o1564498397006015.jpeg"
+                     alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://static.invenglobal.com/upload/image/2020/03/09/i1583743042159457.jpeg"
+                     alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="plus">
+        <div class="alert alert-dark" role="alert">
+            [Fakerㅣ이상혁] 인물에 대해 더 알아보기
+        </div>
+    </div>
+    <div class="card" style="width: 1000px;">
+        <div class="card-header">
+            대회 수상 내역
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">핫식스 리그 오브 레전드 챔피언스 서머 2013 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 월드 챔피언십 시즌 3 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">판도라TV 리그 오브 레전드 챔피언스 윈터 2013-2014 우승 (SK텔레콤 T1 K)</li>
+            <li class="list-group-item">리그 오브 레전드 올스타 인비테이셔널 2014 우승 (SK텔레콤 T1 K)</li>
+            <li class="list-group-item">스베누 리그 오브 레전드 챔피언스 코리아 스프링 2015 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">미드 시즌 인비테이셔널 준우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">스베누 리그 오브 레전드 챔피언스 코리아 서머 2015 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 월드 챔피언십 2015 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">인텔 익스트림 마스터즈 시즌 10 월드 챔피언십 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">롯데 꼬깔콘 리그 오브 레전드 챔피언스 코리아 스프링 2016 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">미드 시즌 인비테이셔널 2016 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 월드 챔피언십 2016 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 챔피언스 코리아 스프링 2017 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">미드 시즌 인비테이셔널 2017 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">2017 리프트 라이벌즈 준우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 챔피언스 코리아 서머 2017 준우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">리그 오브 레전드 월드 챔피언십 2017 준우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">2018 리프트 라이벌즈 준우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">2018년 자카르타-팔렘방 아시안 게임 e스포츠 리그 오브 레전드 은메달</li>
+            <li class="list-group-item">스무살 우리 리그 오브 레전드 챔피언스 코리아 스프링 2019 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">2019 리프트 라이벌즈 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">우리은행 리그 오브 레전드 챔피언스 코리아 서머 2019 우승 (SK텔레콤 T1)</li>
+            <li class="list-group-item">우리은행 리그 오브 레전드 챔피언스 코리아 스프링 2020 우승 (T1)</li>
+
+
+        </ul>
+    </div>
+    <div class="card" style="width: 30rem;">
+        <img class="card-img-top" style="width: auto; height: 400px;"
+             src="https://w.namu.la/s/03110ecaf7721941f17941ccd51d8ceabf11a76f4be060a913c38135377b00e048206aa072082102998a4ccd013341fdec309598e830b497bf323cead3a4a35eef41e3238737b66fe9cf4dfd2833d42d7bd67189f8e520a83bc73a1164f99871"
+             alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Fakerㅣ이상혁</h5>
+            <p class="card-text">대한민국의 리그 오브 레전드 프로게이머이자 LCK의 T1 소속 프랜차이즈 스타, 파트 오너. 포지션은 미드라이너이다.</p>
+            <a href="https://namu.wiki/w/%EC%9D%B4%EC%83%81%ED%98%81" class="btn btn-primary">페이커 나무위키</a>
+        </div>
+    </div>
+    <div class="card" style="width: 30rem;">
+        <img class="card-img-top" style="width: auto; height: 400px;"
+             src="https://yt3.ggpht.com/ytc/AAUvwni31JGsIL7zjSy64nhVlZ917mp1XL_wjI1Yonnfcg=s88-c-k-c0x00ffffff-no-rj"
+             alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Fakerㅣ이상혁</h5>
+            <p class="card-text">페이커의 공식 유튜브 채널입니다. 페이커의 플레이 하이라이트와 비하인드 콘텐츠가 매주 업로드됩니다. 구독과 좋아요로 페이커 선수를
+                응원해주세요.</p>
+            <a href="https://www.youtube.com/channel/UCpJw2H9KKqwCCGQKRh1Bf2w" class="btn btn-primary">페이커 유튜브</a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+

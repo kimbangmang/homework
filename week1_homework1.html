@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>머쉬베놈 선글라스 판매</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .wrap {
+            width: 550px;
+            margin: 10px auto;
+        }
+
+        .shop-name {
+            margin: 20px auto;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-head {
+            font-size: 30px;
+        }
+
+        .price {
+            font-size: 15px;
+        }
+
+
+        .order-box {
+            padding-top: 10px;
+            margin: 20px auto;
+        }
+
+        .button {
+            padding-top: 20px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.');
+        }
+
+    </script>
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="shop-name"> 보자보자 어디보자 샵 <img
+            src="https://yt3.ggpht.com/ytc/AAUvwnjbdcC4iKPkpyw5wpf3Rxmk6wZIQRIGaz7FAZrgrQ=s900-c-k-c0x00ffffff-no-rj"
+            style="width:40px"></div>
+    <div class="card" style="width: 550px;">
+        <img class="card-img-top" src="https://www.influencernews.kr/news/photo/202012/13255_22542_4857.jpg"
+             alt="Card image cap">
+        <div class="card-body">
+            <p class="card-head"> 머쉬베놈 선글라스 <span class="price"> 250,000원 / 개 </span></p>
+            <p> 이 특별한 선글라스는 일반 선글라스와 다르게 렌즈 부분을 위로 올렸다 내렸다 할 수 있어 내 눈을 가리고 싶을 때와 보이고 싶을 때 귀찮게 벗고 쓰지 않아도
+                됩니다. </p>
+            <p> 싫어하는 상대를 약올릴 때에 올렸다 내렸다 하면 더 약오를 수 있습니다.</p>
+            <p> 쇼미더머니9에서 머쉬베놈이 착용해 인기를 끌고 있는 제품입니다. </p>
+        </div>
+    </div>
+    <div class="order-box">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자 성함</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">주문 수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>수량을 선택하세요</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">받을 주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="button">
+            <button onclick="order()" type="button" class="btn btn-success">주문하기</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
